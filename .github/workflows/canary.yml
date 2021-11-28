@@ -1,0 +1,14 @@
+name: Canary
+on:
+  push:
+    branches:
+      - stable
+  pull_request:
+    branches:
+      - stable
+jobs:
+  Publish-Canary-Build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🤖 Automatic Builds aren't ready yet!"
+      # TODO (HarryET): Auto push new canary build to application

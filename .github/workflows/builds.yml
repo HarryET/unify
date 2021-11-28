@@ -1,0 +1,21 @@
+name: Builds
+on:
+  push:
+    branches:
+      - stable
+      - canary
+  pull_request:
+    branches:
+      - stable
+      - canary
+jobs:
+  Test-Build-Web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: install # will run `yarn install`
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: web:build # will run `yarn web:build`
