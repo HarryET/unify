@@ -16,4 +16,4 @@ jobs:
       - name: Install Node.js Dependencies
         run: yarn
       - name: Run Eslint
-        run: yarn lint
+        run: yarn lint:run
