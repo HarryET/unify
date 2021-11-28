@@ -1,7 +1,7 @@
 name: Lints
 on: [push, pull_request]
 jobs:
-  Jest:
+  EsLint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
