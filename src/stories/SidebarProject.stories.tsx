@@ -10,5 +10,5 @@ export default {
 } as ComponentMeta<typeof SidebarProject>;
 
 export const Primary: ComponentStory<typeof SidebarProject> = () => (
-    <SidebarProject {...{ id: '0000-0000-0000', name: 'Demo Project' }} />
+    <SidebarProject type="project" project={{ id: '0000-0000-0000', name: 'Demo Project', path: '/' }} />
 );
