@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - canary
-  pull_request:
-    branches:
-      - canary
 jobs:
   Publish-Canary-Build:
     runs-on: ubuntu-latest
